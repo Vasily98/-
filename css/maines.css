@@ -1,0 +1,472 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+/* ОБНУЛЕНИЕ ЗАКОНЧЕНО */
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2.5fr;
+  grid-template-rows: 1fr 10fr;
+  align-items: center;
+  max-height: 100%;
+  background-color: #fff9e6;
+  overflow: hidden;
+}
+
+/*------------------ Меню начало */
+.logo {
+  grid-column: 1/2;
+  justify-self: start;
+  padding-left: 20%;
+  padding-top: 3%;
+  position: relative;
+}
+
+.menu {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 3%;
+  position: relative;
+}
+.menu_text:hover,
+.menu_text:active,
+.menu_text:focus {
+  color: #1b7dff;
+}
+
+.menu_text {
+  margin-right: 3%;
+  font-size: 14px;
+  color: black;
+}
+
+.contact {
+  padding-top: 3%;
+  grid-column: 3;
+  grid-row: 1/2;
+  align-items: center;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 7px;
+  position: relative;
+}
+
+.nomer {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.nomer:hover,
+.nomer:active,
+.nomer:focus {
+  text-decoration: blue underline;
+}
+
+.podrob {
+  font-size: 10px;
+  color: black;
+  font-weight: bold;
+  text-decoration: rgb(209, 137, 110) underline;
+}
+.podrob:hover,
+.podrob:active,
+.podrob:focus {
+  color: #1b7dff;
+}
+
+/*----------------------- Меню конец */
+/* -----------------------Начало Начинка титла */
+
+.na4inka {
+  grid-column: 2/3;
+  grid-row: 2;
+  align-self: start;
+  padding-top: 15%;
+  position: relative;
+}
+
+.texth1 {
+  font-size: 52px;
+}
+
+.text2 {
+  padding-top: 7%;
+  font-size: 18px;
+}
+
+.knopki {
+  grid-column: 2/3;
+  grid-row: 2;
+  margin-top: 20%;
+  position: relative;
+}
+
+.knopka1 {
+  font-size: 14px;
+  color: #fff;
+  background-color: orangered;
+  padding: 2% 2%;
+  border-radius: 100px;
+}
+.knopka1:hover,
+.knopka1:active,
+.knopka1:focus {
+  background-color: blue;
+}
+
+.knopka2 {
+  padding-left: 5%;
+  color: orangered;
+  font-size: 14px;
+}
+.knopka2:hover,
+.knopka2:active,
+.knopka2:focus {
+  color: #1b7dff;
+}
+
+.strela {
+  grid-column: 2/3;
+  grid-row: 2;
+  margin-top: 40%;
+  position: relative;
+}
+.imgstl {
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+}
+
+.imgstl:hover,
+.imgstl:active,
+.imgstl:focus {
+  margin-left: 10%;
+  width: 16px;
+  height: 16px;
+}
+
+.contact_mid {
+  grid-column: 2/3;
+  grid-row: 2;
+  align-self: end;
+  padding-bottom: 8%;
+  position: relative;
+}
+.contact_punct:hover,
+.contact_punct:active,
+.contact_punct:focus {
+  color: #1b7dff;
+}
+
+.contact_punct {
+  font-size: 15px;
+  color: #000;
+  margin-right: 2%;
+}
+
+.krugmin {
+  border-radius: 50%;
+  background-color: rgb(250, 246, 7);
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  z-index: 0;
+  top: -40px;
+  left: -30px;
+}
+
+.krugmax {
+  border-radius: 50%;
+  background-color: rgb(250, 246, 7);
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  z-index: 0;
+  top: -60px;
+  right: 0px;
+}
+
+.pers {
+  position: absolute;
+  top: 70px;
+  right: 5%;
+  z-index: 0;
+}
+.personal {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+/* -------------------------------------------------------Хедер закончин  */
+
+/* ------------------------------------------------------- Первый секор  */
+
+.conteiner {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2.5fr;
+  grid-template-rows: 1fr 10fr;
+  align-items: center;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.sekt1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 10%;
+  position: relative;
+}
+
+.sekt1_text {
+  font-size: 42px;
+}
+
+.sekt1_abz {
+  font-size: 20px;
+  color: gray;
+  padding-top: 5%;
+}
+
+.kart_grid {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+}
+
+.kart img {
+  width: 80px;
+  height: 80px;
+}
+
+.kart span {
+  display: block;
+  margin-left: 15%;
+  font-size: 45px;
+  color: orangered;
+  font-weight: bold;
+}
+
+.kart p {
+  font-size: 15px;
+  font-weight: bolder;
+}
+.kart_2 {
+  justify-self: center;
+}
+.kart_3 {
+  justify-self: end;
+}
+
+/* ---------------------------------------------Конец первого сектора  */
+/* ---------------------------------------------Начало второго сектора */
+.conteiner2 {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1.5fr;
+  grid-template-rows: 1fr 10fr;
+  align-items: center;
+  max-height: 750px;
+  overflow: hidden;
+  background-color: #fff9e6;
+}
+
+.na4inka2 {
+  grid-column: 2/3;
+  position: relative;
+  margin-left: 14%;
+  margin-right: 8%;
+}
+.blok_grid {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+.blok1 {
+  grid-column: 1/2;
+}
+.blok2 {
+  grid-column: 2/2;
+}
+
+.tit {
+  font-size: 42px;
+  grid-row: 1/2;
+  padding-bottom: 5%;
+}
+
+.cek2_menu {
+  grid-row: 2/2;
+}
+
+.cek2_menu_text {
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+  padding-right: 3%;
+}
+
+.cek2_menu_text:hover,
+.cek2_menu_text:active,
+.cek2_menu_text:focus {
+  color: #000;
+}
+
+.girs {
+  position: absolute;
+  top: 195%;
+  right: 55%;
+  z-index: 0;
+}
+
+.girs_pers {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+.blok2 {
+  padding-left: 15%;
+  padding-top: 5%;
+}
+
+.blok2_text1 {
+  font-size: 38px;
+}
+
+.blok2_spisk {
+  margin-top: 10%;
+  padding-left: 5%;
+}
+
+.spisk_text {
+  font-size: 16px;
+  line-height: 220%;
+}
+
+.knopki_cek2 {
+  margin-top: 15%;
+}
+
+.knopka3 {
+  font-size: 14px;
+  color: #fff;
+  background-color: orangered;
+  padding: 5% 6%;
+  border-radius: 100px;
+}
+.knopka3:hover,
+.knopka3:active,
+.knopka3:focus {
+  background-color: blue;
+}
+
+.knopka4 {
+  padding-left: 2%;
+  color: orangered;
+  font-size: 14px;
+}
+.knopka4:hover,
+.knopka4:active,
+.knopka4:focus {
+  color: #1b7dff;
+}
+
+.strela_cek2 {
+  grid-column: 2/2;
+  margin-top: 20%;
+  margin-left: 15%;
+}
+
+.str2 img {
+  height: 20px;
+  width: 20px;
+}
+
+.imgstl2:hover,
+.imgstl2:active,
+.imgstl2:focus {
+  margin-left: 10%;
+  width: 16px;
+  height: 16px;
+}
+
+/*----------------------------------------------------- Конец второго сектора */
+/* ------------------------------------------------------Начало Footer */
